@@ -7,6 +7,8 @@ import MovieHOC from "./HOC/Movie.HOC";
 // pages
 import HomePage from "./pages/Home.page";
 import Movie from "./pages/Movie.Page";
+import Plays from "./pages/Plays.page";
+import Sports from "./pages/Sports.page";
 
 
 // Import css files
@@ -20,6 +22,8 @@ function App() {
     <>
       <DefaultHOC path="/" exact component={HomePage} />
       <MovieHOC path="/movie/:id" exact component={Movie} />
+      <DefaultHOC path="/plays" exact component={Plays} />
+      <DefaultHOC path="/sports" exact component={Sports} />
     </>
   );
 }
