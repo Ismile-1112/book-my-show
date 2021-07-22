@@ -2,7 +2,7 @@ import React from 'react';
 
 // component
 import Poster from '../components/Poster/poster.component';
-import PlaysFilter from '../components/PlaysFilters/PlaysFilters.component';
+import SportsFilter from '../components/Filters/SportsFilters.component';
 
 const Sports = () => {
     return (
@@ -38,15 +38,13 @@ const Sports = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:w-3/12 lg:ml-8">
+                    <div className="hidden lg:block lg:w-3/12 lg:ml-8">
                         <h2 className="text-2xl font-bold mb-4">Filters</h2>
                         <div>
-                            <PlaysFilter title="Date" tags={["Today", "Tomorrow", "This Weekend"]} />
-                            <PlaysFilter title="Language" tags={["Tamil", "Telugu", "English"]} />
-                            <PlaysFilter title="Categories" tags={["Theatre"]} />
-                            <PlaysFilter title="Genres" tags={["Drama", "Comedy", "Historical"]} />
-                            <PlaysFilter title="More Filters" tags={["Online Streaming", "Kids Allowed", "Outdoor Events"]} />
-                            <PlaysFilter title="Price" tags={["Free", "0-500", "501-2000", "Above 2000"]} />
+                            <SportsFilter title="Date" tags={["Today", "Tomorrow", "This Weekend"]} />
+                            <SportsFilter title="Categories" tags={["E Sports"]} />
+                            <SportsFilter title="More Filters" tags={["Online Streaming", "Kids Allowed", "Kids Activities"]} />
+                            <SportsFilter title="Price" tags={["Free", "0-500", "501-2000", "Above 2000"]} />
                         </div>
                     </div>
                 </div>

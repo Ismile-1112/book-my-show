@@ -2,7 +2,7 @@ import React from 'react';
 
 // component
 import Poster from '../components/Poster/poster.component';
-import PlaysFilter from '../components/PlaysFilters/PlaysFilters.component';
+import PlaysFilter from '../components/Filters/PlaysFilters.component';
 
 const Plays = () => {
     return (
@@ -38,7 +38,7 @@ const Plays = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:w-3/12 lg:ml-8">
+                    <div className="hidden lg:block lg:w-3/12 lg:ml-8">
                         <h2 className="text-2xl font-bold mb-4">Filters</h2>
                         <div>
                             <PlaysFilter title="Date" tags={["Today", "Tomorrow", "This Weekend"]} />
